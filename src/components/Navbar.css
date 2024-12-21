@@ -1,0 +1,134 @@
+/* Custom styles for better positioning and alignment */
+.navbar-custom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+/* Center content (links) for large screens */
+.navbar-center {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;  /* Ensure it takes up available space */
+}
+.navbar-brand{
+    color: #fff;
+}
+.navbar-brand:hover{
+    color: #007bff;
+}
+
+.navbar-link {
+    color: white !important; /* Ensure that the text color is white */
+    transition: color 0.3s ease; /* Add smooth transition for hover effect */
+}
+
+.navbar-link:hover {
+    color: #007bff !important; /* Change color to blue on hover */
+}
+
+.nav-hov:hover {
+    color: #007bff !important; /* Change the color to blue when hovered */
+}
+
+
+/* Change the background of the hamburger button */
+.navbar-toggler {
+    background-color:grey; /* Change to a dark background color */
+}
+/* Change the color of the hamburger icon */
+.navbar-toggler-icon {
+    background-color: grey; /* Example: Change to white or any color */
+}
+
+.Login-button:hover, .Register-button:hover {
+    background-color: #007f5e;  /* Darker shade for hover effect */
+    color: #fff;
+}
+.Register-button:hover {
+ background-color: #007bff;
+}
+
+
+/* Adjust alignment of links on large screens */
+@media (min-width: 769px) {
+    .navbar-center .navbar-links {
+        justify-content: center;  /* Center the links */
+    }
+}
+
+/* Left-aligned content (links) for mobile screens */
+@media (max-width: 768px) {
+    .navbar-center .navbar-links {
+        justify-content: flex-start;  /* Align links to the left */
+    }
+}
+
+/* Right-aligned buttons: Login, Register, and Logout */
+.navbar-right {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;  /* Space between the buttons */
+}
+
+/* Left margin for the brand */
+.navbar-brand {
+    margin-left: 15px;
+}
+
+/* Button Styling */
+.Login-button {
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+/* #007bff */
+.Register-button {
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+/* Make the buttons responsive */
+@media (max-width: 768px) {
+    /* For mobile screens, make navbar elements stack vertically */
+    .navbar-center {
+        display: block;
+        text-align: center;
+    }
+
+    .navbar-right {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    /* Stack buttons and links vertically */
+    .navbar-center .navbar-link {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .navbar-right .Login-button, .navbar-right .Register-button {
+        width: auto; /* Keep the width to auto instead of 100% */
+        margin-top: 10px; /* Space between buttons */
+        padding: 6px 15px; /* Reduced padding for smaller buttons */
+        font-size: 12px; /* Smaller font size */
+    }
+
+    /* Make the buttons more prominent */
+    .Login-button:hover {
+        background-color: #007f5e; /* Darker shade for hover effect */
+        color: #fff;
+    }
+
+    .Register-button:hover {
+        background-color: #007bff;
+    }
+}
