@@ -1,1 +1,1 @@
-# NextGen-Internship-P1-Week1
+# NextGen-Internship-Real-time Collaboration Tool with MERN Technology (P1)
